@@ -75,7 +75,7 @@ function Form() {
         pri = [...pri, pri2]
     })
 
-    console.log(pri.reduce((a, b) => a + b, 0));
+    // console.log(pri.reduce((a, b) => a + b, 0));
     // console.log(itemArray);
 
 

@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/smym-cake-order/static/css/main.d5a8fdce.chunk.css",
+    "main.js": "/smym-cake-order/static/js/main.805ecfe8.chunk.js",
+    "main.js.map": "/smym-cake-order/static/js/main.805ecfe8.chunk.js.map",
+    "runtime-main.js": "/smym-cake-order/static/js/runtime-main.38a634de.js",
+    "runtime-main.js.map": "/smym-cake-order/static/js/runtime-main.38a634de.js.map",
+    "static/js/2.2564151a.chunk.js": "/smym-cake-order/static/js/2.2564151a.chunk.js",
+    "static/js/2.2564151a.chunk.js.map": "/smym-cake-order/static/js/2.2564151a.chunk.js.map",
+    "index.html": "/smym-cake-order/index.html",
+    "static/css/main.d5a8fdce.chunk.css.map": "/smym-cake-order/static/css/main.d5a8fdce.chunk.css.map",
+    "static/js/2.2564151a.chunk.js.LICENSE.txt": "/smym-cake-order/static/js/2.2564151a.chunk.js.LICENSE.txt",
+    "static/media/About.css": "/smym-cake-order/static/media/Aboutbg.0127d357.jpg",
+    "static/media/Cake.css": "/smym-cake-order/static/media/marble.4b765846.jpg",
+    "static/media/Header.css": "/smym-cake-order/static/media/bg5.ff1ce87f.jpg",
+    "static/media/Form.css": "/smym-cake-order/static/media/bg3.9352821e.jpg",
+    "static/media/DeliveryNo.css": "/smym-cake-order/static/media/dbpic.a7f5ac0c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.38a634de.js",
+    "static/js/2.2564151a.chunk.js",
+    "static/css/main.d5a8fdce.chunk.css",
+    "static/js/main.805ecfe8.chunk.js"
+  ]
+}
