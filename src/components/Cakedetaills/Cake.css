@@ -1,0 +1,126 @@
+.cakedetails {
+    width: 100vw;
+    height: auto;
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url(../../Images//bg2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.childDiv {
+    text-align: center;
+    width: 100%;
+}
+
+.childDiv h1 {
+    color: white;
+}
+
+.childDiv .items1, .childDiv .items2 {
+    padding: .5rem 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.childDiv .items1 .detaildiv, .childDiv .items2 .detaildiv {
+    color: white;
+    height: 300px;
+    width: 300px;
+    margin: 1rem 0rem;
+    border-radius: 5px;
+    background-color: rgb(0, 0, 0);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    transition: 1s ease;
+}
+
+.childDiv .items1 .detaildiv:hover, .childDiv .items2 .detaildiv:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 5px #ffffff47;
+}
+.hover{
+    display: none;
+}
+.hover span{
+    color: gold;
+}
+
+.detaildiv:hover .hover{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0rem 1rem 0rem 1rem;
+    height: 90%;
+}
+
+.childDiv .items1 .detaildiv h2, .childDiv .items2 .detaildiv h2 {
+    color: white;
+    background-color: #ff7b00;
+    z-index: 111;
+}
+
+.childDiv .items1 .detaildiv:nth-child(1) {
+    background-image: url(../../Images/marble.jpg);
+    background-size: contain;
+}
+
+.childDiv .items1 .detaildiv:nth-child(1):hover {
+    background-image: linear-gradient( 0deg, rgb(0 0 0 / 93%), rgb(66 66 66 / 89%)), url(../../Images/marble.jpg);
+}
+
+.childDiv .items1 .detaildiv:nth-child(2) {
+    background-image: url(../../Images/Pineapple\ cake.jpg);
+}
+
+.childDiv .items1 .detaildiv:nth-child(2):hover {
+    background-image: linear-gradient( 0deg, rgb(0 0 0 / 93%), rgb(66 66 66 / 89%)), url(../../Images/Pineapple\ cake.jpg);
+}
+
+.childDiv .items1 .detaildiv:nth-child(3) {
+    background-image: url(../../Images/Plum\ cake.jpg);
+}
+
+.childDiv .items1 .detaildiv:nth-child(3):hover {
+    background-image: linear-gradient( 0deg, rgb(0 0 0 / 93%), rgb(66 66 66 / 89%)), url(../../Images/Plum\ cake.jpg);
+}
+
+.childDiv .items2 .detaildiv:nth-child(1) {
+    background-image: url(../../Images/Carrot\ cake.jpg);
+}
+
+.childDiv .items2 .detaildiv:nth-child(1):hover {
+    background-image: linear-gradient( 0deg, rgb(0 0 0 / 93%), rgb(66 66 66 / 89%)), url(../../Images/Carrot\ cake.jpg);
+}
+
+.childDiv .items2 .detaildiv:nth-child(2) {
+    background-image: url(../../Images/marble.jpg);
+    background-size: contain;
+}
+
+.childDiv .items2 .detaildiv:nth-child(2):hover {
+    background-image: linear-gradient( 0deg, rgb(0 0 0 / 93%), rgb(66 66 66 / 89%)), url(../../Images/marble.jpg);
+}
+
+.childDiv .items2 .detaildiv:nth-child(3) {
+    background-image: url(../../Images/Pineapple\ cake.jpg);
+}
+
+.childDiv .items2 .detaildiv:nth-child(3):hover {
+    background-image: linear-gradient( 0deg, rgb(0 0 0 / 93%), rgb(66 66 66 / 89%)), url(../../Images/Pineapple\ cake.jpg);
+}
+
+/* Responsive cake page */
+
+@media only screen and (max-width: 710px) {
+    .items1 {
+        flex-direction: column;
+    }
+    .items2 {
+        flex-direction: column;
+    }
+}

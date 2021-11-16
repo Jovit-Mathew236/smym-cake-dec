@@ -1,0 +1,255 @@
+.perantDiv {
+  background-image: url(../../Images/bg3.jpg);
+  background-color: black;
+  background-position: center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  height: auto;
+  padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formDiv {
+  height: auto;
+  width: auto;
+  margin: 0px 4vw 0px 4vw;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(11px);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formDiv h1 {
+  font-size: 25px;
+  margin-top: 3rem;
+  text-decoration-line: underline;
+  color: #ffffff;
+}
+
+.form {
+  padding: 5vh 8vw;
+  /* margin: auto; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  height: 45rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form input,
+form select {
+  border: none;
+  background-color: transparent;
+  border-bottom: 1px solid #ff7b00;
+  width: 50vw;
+  font-size: 18px;
+  color: white;
+}
+
+form select {
+  color: rgb(0 0 0);
+  background-color: rgb(255 255 255);
+  border-radius: 15px;
+}
+
+.war_text {
+  color: red;
+  font-size: 13px;
+  margin: -25px 0px -20px 0px;
+  text-align: left;
+  width: 100%;
+}
+
+.itmesDiv {
+  display: flex;
+  width: 102%;
+}
+
+.item {
+  width: 50%;
+  margin: 0% 1% 0% 1%;
+}
+
+form textarea {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 20px;
+  width: 45vw;
+  font-size: 23px;
+  padding: 2vw;
+  color: white;
+}
+
+p.additem-btn {
+  color: white;
+  background-color: transparent;
+  font-size: 3rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  cursor: pointer;
+}
+
+.FormSub {
+  border-radius: 30px;
+  width: 10rem;
+  margin-top: 25px;
+  font-size: 1.5rem;
+  background-color: #ff7b00c9;
+  padding: 0.5rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+}
+
+.FormSub:hover {
+  background-color: transparent;
+  border: 1px solid #ff7b00c9;
+  color: #ff7b00c9;
+}
+
+.liveOrder {
+  position: absolute;
+  top: 50%;
+  right: 2%;
+}
+
+.Datafield {
+  height: 130px;
+  width: 150px;
+  background-color: #ff7b00c9;
+}
+
+.Datafield h3 {
+  background-color: red;
+  text-align: center;
+  color: white;
+}
+
+.Datafield p {
+  color: white;
+  margin: auto;
+  font-size: 50px;
+  height: auto;
+  width: fit-content;
+}
+
+/* Responsive form */
+
+@media only screen and (max-width: 700px) {
+  form input,
+  form select {
+    width: 80vw;
+  }
+  .perantDiv {
+    padding: 5rem 0rem 5rem 0rem;
+  }
+  form textarea {
+    width: 75vw;
+  }
+  .liveOrder {
+    display: none;
+  }
+}
+
+/* Alert Box CSS */
+
+/* .alertDiv{
+    height: 100vh;
+    position: absolute;
+    z-index: 999;
+} */
+
+.alert-container {
+  width: 100%;
+  position: fixed;
+  bottom: 40px;
+  display: none;
+  justify-content: center;
+  z-index: 999;
+  transition: 2s ease-in;
+}
+.alert-container-show {
+  display: flex;
+}
+
+.alert-box {
+  height: 60px;
+  background-color: #228c22;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  width: calc(300px + 10vw);
+  border-left: 5px solid #003700;
+}
+.alert-box.show {
+  animation: show_pop 1s ease forwards;
+}
+@keyframes show_pop {
+  0% {
+    transform: translateY(100%);
+  }
+  40% {
+    transform: translateY(-10%);
+  }
+  80% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-10%);
+  }
+}
+.alert-box.hide {
+  animation: hide_pop 1s ease forwards;
+}
+@keyframes hide_pop {
+  0% {
+    transform: translateY(-10%);
+  }
+  40% {
+    transform: translateY(0%);
+  }
+  80% {
+    transform: translateY(-10%);
+  }
+  100% {
+    transform: translateY(155%);
+  }
+}
+.alert-contant h1 {
+  width: 100%;
+  text-align: left;
+  font-size: inherit;
+  color: white;
+}
+
+.alert-contant hr {
+  height: 2px;
+}
+
+.alert-contant form {
+  display: flex;
+  height: 0%;
+  flex-direction: unset;
+  justify-content: unset;
+  align-items: unset;
+}
+
+.alert-contant form .alert--ok-btn {
+  margin: auto;
+  background-color: green;
+  color: white;
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 0.2rem 0.3rem;
+  margin-top: -15px;
+  cursor: pointer;
+}

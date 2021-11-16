@@ -1,0 +1,152 @@
+.parentDivDeliveryNo {
+    height: 82vh;
+    background-image: linear-gradient( 115deg, black 70%, #ff8d0000 30%);
+}
+
+.img {
+    background-image: linear-gradient(54deg, black 58%, transparent 20%), url(../../Images/dbpic.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.main h1 {
+    color: white;
+    text-align: center;
+}
+
+.numbers {
+    margin: 10vh 0vw 0vh 20vw;
+    width: fit-content;
+    overflow-y: scroll;
+}
+
+.numbers h2 {
+    color: white;
+    text-decoration: underline;
+}
+
+.numbers div.head li, .numbers li {
+    list-style-type: circle;
+    color: #FF7A00;
+    line-height: 8vh;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.numbers div li, a {
+    list-style-type: square;
+    text-decoration: none;
+    color: white;
+    line-height: 8vh;
+    cursor: pointer;
+}
+
+.numbers div.head li:hover {
+    color: white;
+    text-decoration: underline;
+    transition: .5s ease-in-out;
+}
+
+#num {
+    display: none;
+    list-style-type: square;
+    margin-left: 20px;
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    z-index: 444;
+}
+
+#num2 {
+    display: none;
+    list-style-type: square;
+    margin-left: 20px;
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    z-index: 333;
+}
+
+#num3 {
+    display: none;
+    list-style-type: square;
+    margin-left: 20px;
+    position: absolute;
+    background-color: black;
+    padding: 10px;
+    z-index: 222;
+}
+
+#num4 {
+    display: none;
+    list-style-type: square;
+    margin-left: 20px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    padding: 10px;
+    z-index: 111;
+}
+
+.number-container{
+    width: 264px;
+    display: flex;
+    overflow-x: scroll;
+    margin: 1rem;
+    border: 1px solid white;
+}
+.number-container::-webkit-scrollbar{
+    width: 2px;
+    height: 0px;
+    background-color: transparent;
+}
+.number-container::-webkit-scrollbar-thumb{
+    background-color: #ff7b00c9;
+    border-radius: 20px;
+}
+
+.container2{
+    width: auto;
+    height: auto;
+    background-color: #ffa50063;
+    border-radius: 20px;
+    padding: 2rem;
+    margin: 1rem;
+}
+
+.container2 li{
+    width: max-content;
+    margin-left: auto;
+}
+
+/* Responsive DeliveryNo */
+
+@media only screen and (max-width: 1100px) {
+    .parentDivDeliveryNo {
+        background-image: linear-gradient( 115deg, black 72vw, #ff8d0000 30%);
+    }
+    .img {
+        background-image: url(../../Images/dbpic.png);
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .parentDivDeliveryNo {
+        background-color: black;
+        height: auto;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .numbers {
+        margin: auto;
+    }
+    .numbers div.head li, .numbers li {
+        margin: auto;
+    }
+    #num,#num2,#num3,#num4{
+        position: unset;
+    }
+}

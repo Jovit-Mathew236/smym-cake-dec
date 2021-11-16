@@ -1,0 +1,180 @@
+.home {
+    animation: bganim 15s infinite 4s linear;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(../../Images/bg5.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* @keyframes bganim {
+    0% {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(../../Images/Church.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    25% {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(../../Images/bg5.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    50% {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(../../Images/bg6.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    75% {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(../../Images/bg7.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+    100% {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(../../Images/Church2.jpg);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }
+} */
+
+/* @-moz-keyframes bganim {
+    0% {
+        -moz-background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(../../Images/Church.jpg);
+        -moz-background-size: cover;
+        -moz-background-position: center;
+    }
+    25% {
+        -moz-background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(../../Images/bg5.jpg);
+        -moz-background-size: cover;
+        -moz-background-position: center;
+    }
+    50% {
+        -moz-background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(../../Images/bg6.jpg);
+        -moz-background-size: cover;
+        -moz-background-position: center;
+    }
+    75% {
+        -moz-background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(../../Images/bg7.jpg);
+        -moz-background-size: cover;
+        -moz-background-position: center;
+    }
+    100% {
+        -moz-background: linear-gradient(0deg, rgba(0, 0, 0, 0.46), rgba(0, 0, 0, 0.46)), url(../../Images/Church2.jpg);
+        -moz-background-size: cover;
+        -moz-background-position: center;
+    }
+} */
+
+.header {
+    position: absolute;
+    width: 100vw;
+    height: auto;
+}
+
+.headerChild {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem;
+}
+
+#menu {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.menubtn {
+    padding: 1.5rem;
+    display: none;
+    z-index: 111;
+}
+
+.logo {
+    margin-top: 30px;
+}
+
+.logo div {
+    content: url(../../Images/Logo.png);
+    width: 112px;
+    height: 112px;
+}
+
+#menu a,#menu p {
+    padding: 0px 15px 0px 9px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    color: white;
+    cursor: pointer;
+    transition: .5s ease;
+}
+#menu a:hover{
+    transform: translateY(3.5px);
+}
+#menu p:hover{
+    transform: translateY(3.5px);
+}
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.intromsg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro h1 {
+    font-size: 46px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.intro button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    padding-bottom: 10px;
+    background-color: #ff7b00c9;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    cursor: pointer;
+    transition: height 1s;
+}
+
+.intro button:hover {
+    height: 180px;
+}
+
+/* Responsive header */
+
+@media only screen and (max-width: 600px) {
+    .menubtn {
+        display: block;
+    }
+    #menu {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0px 10px 0px;
+        background-color: #212121cf;
+        width: 100vw;
+        position: absolute;
+        left: 0px;
+        top: -208px;
+        align-items: center;
+        transition: top 2s;
+    }
+    #menu a {
+        padding: 10px 0px 0px 0px;
+    }
+}
