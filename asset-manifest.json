@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/smym-cake-dec/static/css/main.31c38a71.chunk.css",
-    "main.js": "/smym-cake-dec/static/js/main.3c39af8d.chunk.js",
-    "main.js.map": "/smym-cake-dec/static/js/main.3c39af8d.chunk.js.map",
+    "main.js": "/smym-cake-dec/static/js/main.d4ce4314.chunk.js",
+    "main.js.map": "/smym-cake-dec/static/js/main.d4ce4314.chunk.js.map",
     "runtime-main.js": "/smym-cake-dec/static/js/runtime-main.355a1a3c.js",
     "runtime-main.js.map": "/smym-cake-dec/static/js/runtime-main.355a1a3c.js.map",
     "static/js/2.9e93d1c8.chunk.js": "/smym-cake-dec/static/js/2.9e93d1c8.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.355a1a3c.js",
     "static/js/2.9e93d1c8.chunk.js",
     "static/css/main.31c38a71.chunk.css",
-    "static/js/main.3c39af8d.chunk.js"
+    "static/js/main.d4ce4314.chunk.js"
   ]
 }
